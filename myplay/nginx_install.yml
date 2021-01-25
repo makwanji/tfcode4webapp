@@ -1,0 +1,24 @@
+---
+- hosts: webservers
+  tasks:
+    - name: ensure nginx is at the latest version
+      apt: name=nginx state=latest
+      become: yes
+
+    - name: start nginx
+      service:
+          name: nginx
+          state: started
+      become: yes
+
+    - name: copy the content of the web site
+      copy:
+        src: ../files/index.html
+        dest: /var/www/html
+      become: yes
+
+    - name: restart nginx
+      service:
+        name: nginx
+        state: restarted
+      become: yes
