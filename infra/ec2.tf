@@ -21,7 +21,3 @@ resource "aws_instance" "rail-db" {
     Name = "rail-db"
   }
 }
-
-provisioner "local-exec" {
-    command = "ansible-playbook -i '${aws_instance.rail-web.public_ip},' --private-key ${var.ssh_key_private} provision.yml"
-}
