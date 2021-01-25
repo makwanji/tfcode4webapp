@@ -10,8 +10,8 @@ resource "aws_vpc" "rail_vpc" {
 
 # Public
 resource "aws_subnet" "SubnetA" {
-  vpc_id     = aws_vpc.rail_vpc.id
-  cidr_block = var.SubnetA
+  vpc_id                  = aws_vpc.rail_vpc.id
+  cidr_block              = var.SubnetA
   map_public_ip_on_launch = true
   tags = {
     Name = "SubnetA-Public"
