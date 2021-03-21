@@ -18,11 +18,9 @@ resource "aws_subnet" "SubnetA" {
   }
 }
 
-
 output "subnet_cidr_blocks" {
   value = [aws_subnet.SubnetA]
 }
-
 
 # Private
 resource "aws_subnet" "SubnetB" {
