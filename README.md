@@ -8,8 +8,12 @@ sourcode - has a code of application
 ansible - store a playbook
 
 # VM Used in this project
+
+```
+docker-ce  - This VM will host all software (Jenkin)
 cka-master - is a K8 master server
 cka-worker - is a k8 workder node
+```
 
 # Tool used & setup in this project 
 Jenkin:
