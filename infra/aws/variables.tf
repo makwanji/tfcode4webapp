@@ -20,3 +20,11 @@ variable "SubnetB" {
 variable "image_id" {
   default = "ami-0aeeebd8d2ab47354"
 }
+
+variable "ec2_key" {
+  default = "devops"
+}
+
+variable "cluster_instance_type" {
+  default = "t2.medium"
+}

@@ -19,7 +19,7 @@ resource "aws_subnet" "SubnetA" {
   }
 }
 
-output "subnet_cidr_blocks" {
+output "subnetA_cidr_blocks" {
   value = [aws_subnet.SubnetA]
 }
 
@@ -31,6 +31,10 @@ resource "aws_subnet" "SubnetB" {
   tags = {
     Name = "SubnetB-Private"
   }
+}
+
+output "subnetB_cidr_blocks" {
+  value = [aws_subnet.SubnetA]
 }
 
 # Route table: attach Internet Gateway 
