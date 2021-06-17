@@ -1,5 +1,5 @@
-resource "aws_security_group" "allow_tls" {
-  name        = "allow_tls"
+resource "aws_security_group" "myDevPort" {
+  name        = "myDevPort"
   description = "Allow TLS inbound traffic"
   vpc_id      = aws_vpc.app1Vpc.id
 
@@ -44,7 +44,7 @@ resource "aws_security_group" "allow_tls" {
   }
 
   tags = {
-    Name = "allow_tls"
+    Name = "myDevPort"
   }
 }
 
