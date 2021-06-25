@@ -24,7 +24,7 @@ resource "aws_instance" "Jenkins" {
   instance_type               = "t2.micro"
   subnet_id                   = aws_subnet.SubnetA.id
   vpc_security_group_ids      = [aws_security_group.myDevPort.id]
-  associate_public_ip_address = "true"
+  associate_public_ip_address = "false"
   key_name                    = var.ec2_key
   user_data = file("Jenkins.sh")
 
