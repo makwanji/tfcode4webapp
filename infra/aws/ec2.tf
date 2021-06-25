@@ -1,9 +1,9 @@
-## Create AWS Instance
-module "ec2-instance" {
-  source  = "terraform-aws-modules/ec2-instance/aws"
-  version = "2.19.0"
-  # insert the 10 required variables here
-}
+# ## Create AWS Instance
+# module "ec2-instance" {
+#   source  = "terraform-aws-modules/ec2-instance/aws"
+#   version = "2.19.0"
+#   # insert the 10 required variables here
+# }
 
 resource "aws_instance" "myDevVM" {
   ami                         = var.image_id
