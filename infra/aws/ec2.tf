@@ -1,5 +1,7 @@
 # ## Create AWS Instance
 
+# commented this code to remove devvm
+
 # resource "aws_instance" "myDevVM" {
 #   ami                         = var.image_id
 #   instance_type               = "t2.micro"
