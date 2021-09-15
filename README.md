@@ -26,3 +26,5 @@ webapp:
 CI/CD:
  - once code updated in sourcode folder, it do following action
    - create a new pod with new code
+
+# Lock main branch
